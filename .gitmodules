@@ -1,0 +1,3 @@
+[submodule "SCSiriWaveformView"]
+	path = SCSiriWaveformView
+	url = https://github.com/nverinaud/SCSiriWaveformView.git

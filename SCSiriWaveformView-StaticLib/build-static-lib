@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xcodebuild -project "SCSiriWaveformViewLib/SCSiriWaveformViewLib.xcodeproj" -sdk iphonesimulator -configuration Release clean build
+xcodebuild -project "SCSiriWaveformViewLib/SCSiriWaveformViewLib.xcodeproj" -sdk iphoneos -configuration Release clean build
+lipo -create -output ./SCSiriWaveformViewLib/build/SCSiriWaveformViewLib.a ./SCSiriWaveformViewLib/build/Release-iphoneos/SCSiriWaveformViewLib.a ./SCSiriWaveformViewLib/build/Release-iphonesimulator/SCSiriWaveformViewLib.a
